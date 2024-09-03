@@ -10,12 +10,21 @@ the_turtle.color("pink")
 #     the_turtle.left(90)
 
 # Draw a dashed line
-for _ in range(15):
-    the_turtle.forward(10)
-    the_turtle.penup()
-    the_turtle.forward(10)
-    the_turtle.pendown()
+# for _ in range(15):
+#     the_turtle.forward(10)
+#     the_turtle.penup()
+#     the_turtle.forward(10)
+#     the_turtle.pendown()
 
+# Draw different shapes
+def draw_shape(num_sides):
+    angle = 360/num_sides
+    for _ in range(num_sides):
+        the_turtle.forward(69)
+        the_turtle.right(angle)
+
+for n in range(3, 11):
+    draw_shape(n)        
 
 
 
