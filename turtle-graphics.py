@@ -42,23 +42,23 @@ the_turtle.shape("turtle")
 
 
 # Draw a spirograph
-colormode(255)
-def random_color():
-    r = random.randint(0, 255)
-    g = random.randint(0, 255)
-    b = random.randint(0, 255)
-    colour = (r, g, b)
-    return colour
+# colormode(255)
+# def random_color():
+#     r = random.randint(0, 255)
+#     g = random.randint(0, 255)
+#     b = random.randint(0, 255)
+#     colour = (r, g, b)
+#     return colour
 
-the_turtle.speed("fastest")
+# the_turtle.speed("fastest")
 
-def draw_spirograph(size_of_gap):
-    for _ in range(int(360/size_of_gap)):
-        the_turtle.color(random_color())
-        the_turtle.circle(100)
-        the_turtle.setheading(the_turtle.heading() + size_of_gap)
+# def draw_spirograph(size_of_gap):
+#     for _ in range(int(360/size_of_gap)):
+#         the_turtle.color(random_color())
+#         the_turtle.circle(100)
+#         the_turtle.setheading(the_turtle.heading() + size_of_gap)
 
-draw_spirograph(10)
+# draw_spirograph(10)
 
 
 
